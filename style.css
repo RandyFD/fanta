@@ -1081,16 +1081,19 @@ body {
   text-shadow: 0px 0px 4px rgb(255, 179, 179);
 }
 /* Responsive */
-@media (max-width: 360px) {
+@media (max-width: 376px) {
+  .container-fluid {
+    width: 100%;
+  }
   .logo {
     margin-top: -15px;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
   .navbar-nav {
     display: flex;
     flex-direction: row;
-    margin-left: -70px;
+    margin-left: -50px;
     margin-bottom: 45px;
     margin-top: 167px;
   }
@@ -1117,35 +1120,34 @@ body {
   .kiri h1 {
     color: rgb(250, 255, 95);
     font-size: 45px;
-    padding-left: 65%;
+    padding-left: 70%;
     margin-top: -130px;
   }
   .kiri p {
     width: 100%;
     margin-top: 130px;
     padding-left: 60px;
-
-    font-size: 11px;
+    font-size: 13px;
   }
   .hero-1 {
-    width: 150px;
-    margin-left: 30px;
-    margin-top: -1290px;
+    width: 130px;
+    margin-left: 50px;
+    margin-top: -1260px;
   }
   .hero-2 {
-    width: 300px;
+    width: 309px;
     margin-left: -70px;
     margin-top: -45px;
   }
   .hero-3 {
     width: 300px;
-    margin-top: -450px;
+    margin-top: -480px;
     margin-left: -80px;
   }
   .hero-4 {
     width: 90px;
-    margin-top: -780px;
-    margin-left: 80px;
+    margin-top: -730px;
+    margin-left: 90px;
   }
   .hero-6 {
     width: 150px;
@@ -1161,7 +1163,7 @@ body {
   .flavour-2 {
     transform: scaleX(1);
     width: 250px;
-    margin-left: 86px;
+    margin-left: 116px;
     margin-top: -280px;
   }
   .flavour-3 {
@@ -1221,8 +1223,8 @@ body {
   }
   .straw-1p {
     display: grid;
-    margin-top: -60px;
-    font-size: 40px;
+    margin-top: -0px;
+    font-size: 35px;
     letter-spacing: 3px;
   }
   .straw-0 {
@@ -1266,11 +1268,11 @@ body {
     color: rgb(255, 68, 99);
     background-color: white;
     font-weight: 700;
-    font-size: 11px;
+    font-size: 12px;
     transition: all 0.4s;
   }
   .bstraw a button:hover {
-    padding: 9px;
+    padding: 8px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -1300,10 +1302,10 @@ body {
     animation: floating 4s infinite;
   }
   .lemon-h1 {
-    margin-top: 10px;
+    margin-top: 0px;
     font-size: 40px;
     font-weight: 800;
-    margin-left: -28px;
+    margin-left: -40px;
     color: rgb(255, 255, 255);
     letter-spacing: 15px;
     text-shadow: 0px 4px 5px rgb(70, 70, 70);
@@ -1313,7 +1315,7 @@ body {
     color: rgb(236, 236, 236);
     font-size: 12px;
     font-weight: 500;
-    margin-top: -35px;
+    margin-top: -75px;
     text-shadow: 0px 0px 4px rgb(255, 179, 179);
     margin-left: -120px;
   }
@@ -1327,18 +1329,18 @@ body {
     color: rgb(255, 166, 0);
     background-color: white;
     font-weight: 700;
-    font-size: 11px;
+    font-size: 12px;
     transition: all 0.4s;
   }
   .blemon a button:hover {
-    padding: 7px;
+    padding: 8px;
     padding-left: 20px;
     padding-right: 20px;
   }
   .daunlemon2 {
     position: relative;
     width: 60px;
-    margin-left: 123px;
+    margin-left: 129px;
     margin-top: -60px;
     filter: drop-shadow(0px 5px 4px rgba(255, 255, 255, 0.889));
   }
@@ -1378,9 +1380,9 @@ body {
     animation: floating 4.5s infinite;
   }
   .grape-5 {
-    width: 150px;
-    margin-left: 210px;
-    margin-top: -350px;
+    width: 200px;
+    margin-left: 230px;
+    margin-top: -270px;
     transform: scaleX(-1);
     filter: drop-shadow(-5px 5px 4px rgba(17, 70, 31, 0.71));
   }
@@ -1444,11 +1446,13 @@ body {
     color: rgb(152, 0, 203);
     background-color: white;
     font-weight: 700;
-    font-size: 11px;
+    font-size: 12px;
     transition: all 0.4s;
   }
   .bgrape a button:hover {
-    padding: 7px;
+    width: 102px;
+
+    padding: 8px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -1466,6 +1470,7 @@ body {
 
   /* Judul */
   #about h1 {
+    margin-top: -20px;
     font-size: 40px;
     letter-spacing: 4px;
     margin-bottom: 40px;
@@ -1505,6 +1510,7 @@ body {
 
   /* TITLE */
   .contact-title {
+    margin-top: 20px;
     font-size: 30px;
     letter-spacing: 3px;
     margin-bottom: 90px;
@@ -1512,6 +1518,7 @@ body {
 
   /* CONTAINER JADI 1 KOLOM */
   .contact-container {
+    margin-top: -30px;
     grid-template-columns: 1fr;
     gap: 20px;
   }
@@ -1519,978 +1526,8 @@ body {
   /* CARD */
   .contact-info,
   .contact-form {
-    padding: 35px;
+    padding: 39px;
     border-radius: 26px;
-  }
-
-  /* H2 */
-  .contact-info h2,
-  .contact-form h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
-  }
-
-  /* INFO ITEM */
-  .info-item {
-    gap: 12px;
-    margin-bottom: 8px;
-  }
-
-  .info-item span {
-    font-size: 20px;
-  }
-
-  .info-item p {
-    font-size: 13px;
-  }
-
-  /* FORM INPUT */
-  .contact-form input,
-  .contact-form textarea {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  /* TEXTAREA */
-  .contact-form textarea {
-    min-height: 100px;
-  }
-
-  /* BUTTON */
-  .contact-form button {
-    padding: 13px;
-    font-size: 14px;
-  }
-}
-@media (max-width: 432px) {
-  .logo {
-    margin-top: -15px;
-    width: 100px;
-    height: 100px;
-  }
-  .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    margin-left: -70px;
-    margin-bottom: 45px;
-    margin-top: 177px;
-  }
-  .navbar-nav a {
-    margin-left: 5px;
-    margin-bottom: 8px;
-    border-radius: 35px;
-    text-align: center;
-    padding: 5px;
-    width: 5rem;
-    font-size: 14px;
-    font-weight: 700;
-    color: white;
-    text-shadow: 0px 0px 2px grey;
-    border-bottom: 3px solid rgba(255, 231, 144, 0.679);
-    border-top: 2px solid rgba(255, 214, 66, 0.679);
-    transition: all 0.4s ease;
-  }
-  .kiri {
-    margin-top: -40px;
-    padding-left: 0px;
-    margin-left: -10px;
-  }
-  .kiri h1 {
-    color: rgb(250, 255, 95);
-    font-size: 45px;
-    padding-left: 75%;
-    margin-top: -140px;
-  }
-  .kiri p {
-    width: 100%;
-    margin-top: 130px;
-    padding-left: 60px;
-
-    font-size: 14px;
-  }
-  .hero-1 {
-    width: 150px;
-    margin-left: 60px;
-    margin-top: -1290px;
-  }
-  .hero-2 {
-    width: 299px;
-    margin-left: -70px;
-    margin-top: -45px;
-  }
-  .hero-3 {
-    width: 300px;
-    margin-top: -450px;
-    margin-left: -80px;
-  }
-  .hero-4 {
-    width: 90px;
-    margin-top: -780px;
-    margin-left: 80px;
-  }
-  .hero-6 {
-    width: 150px;
-    margin-top: -300px;
-    margin-left: -240px;
-    filter: drop-shadow(10px 10px 17px rgba(255, 170, 0, 0.536));
-  }
-  .flavour-1 {
-    transform: scaleX(-1);
-    width: 180px;
-    margin-left: -240px;
-  }
-  .flavour-2 {
-    transform: scaleX(1);
-    width: 250px;
-    margin-left: 166px;
-    margin-top: -280px;
-  }
-  .flavour-3 {
-    margin-left: 10px;
-    margin-top: -150px;
-    font-size: 60px;
-    font-weight: 800;
-  }
-  .stramberyh {
-    margin-top: 10px;
-    margin-left: -40px;
-  }
-  .stramberyh img {
-    width: 80px;
-  }
-  .stramberyh img:hover {
-    transform: rotate(0deg);
-    width: 90px;
-  }
-  .stramberyp img {
-    width: 100px;
-    margin-top: -60px;
-    margin-left: 20px;
-  }
-  .lemonh {
-    margin-top: 60px;
-  }
-  .lemonh img {
-    margin-left: -83px;
-    width: 300px;
-  }
-  .lemonh img:hover {
-    width: 330px;
-  }
-  .lemonp {
-    margin-left: 40px;
-    margin-top: -100px;
-  }
-  .lemonp img {
-    width: 120px;
-  }
-  .berrih {
-    margin-top: -8px;
-    margin-left: -40px;
-  }
-  .berrih img {
-    width: 195px;
-  }
-  .berrip img {
-    width: 90px;
-    margin-top: -90px;
-    margin-left: 20px;
-  }
-  .straw-bg1 {
-    margin-top: 10px;
-    margin-left: -50px;
-    width: 180px;
-  }
-  .straw-1p {
-    margin-top: -20px;
-    font-size: 40px;
-    letter-spacing: 3px;
-  }
-  .straw-0 {
-    margin-left: -280px;
-    filter: drop-shadow(8px 10px 4px rgba(65, 63, 63, 0.748));
-    animation: putarstraw 3s ease infinite;
-  }
-  .straw-1 img {
-    width: 110px;
-    margin-top: -510px;
-    margin-left: 50px !important;
-  }
-  .straw-2 {
-    width: 110px;
-    margin-left: 80px;
-    margin-top: -390px;
-    transform: scale(1.3) rotate(-5deg);
-    filter: drop-shadow(7px 7px 10px rgba(59, 59, 59, 0.656));
-    animation: floating 5s ease infinite;
-  }
-  .bulat {
-    position: absolute;
-    margin-left: -20px;
-    margin-top: -260px;
-    animation: pulse 4s infinite;
-  }
-  .straw-p {
-    width: 150px;
-    color: rgb(255, 255, 255);
-    font-size: 12px;
-    font-weight: 500;
-    margin-top: 0px;
-  }
-  .bstraw a button {
-    margin-left: -3px;
-    padding: 10px;
-    padding-left: 18px;
-    padding-right: 18px;
-    border: 2px solid white;
-    border-radius: 20px;
-    color: rgb(255, 68, 99);
-    background-color: white;
-    font-weight: 700;
-    font-size: 14px;
-    transition: all 0.4s;
-  }
-  .bstraw a button:hover {
-    padding: 11px;
-    padding-left: 23px;
-    padding-right: 23px;
-  }
-  .straw-bg2 {
-    transform: rotate(25deg);
-    margin-left: 86px;
-    width: 60px;
-    margin-top: -70px;
-    filter: drop-shadow(4px 4px 2px rgba(255, 255, 255, 0.889));
-  }
-  @keyframes putarstraw {
-    0% {
-      transform: scale(0.65) rotate(-35deg);
-    }
-    50% {
-      transform: scale(0.7) rotate(-30deg);
-    }
-    100% {
-      transform: scale(0.65) rotate(-35deg);
-    }
-  }
-  .daunlemon {
-    width: 180px;
-    margin-left: 265px;
-    margin-top: 0px;
-    filter: drop-shadow(10px 15px 6px rgba(73, 55, 31, 0.863));
-    animation: floating 4s infinite;
-  }
-  .lemon-h1 {
-    margin-top: -50px;
-    font-size: 40px;
-    font-weight: 800;
-    margin-left: -98px;
-    color: rgb(255, 255, 255);
-    letter-spacing: 15px;
-    text-shadow: 0px 4px 5px rgb(70, 70, 70);
-  }
-  .lemon-p {
-    width: 370px;
-    color: rgb(236, 236, 236);
-    font-size: 13px;
-    font-weight: 500;
-    margin-top: -55px;
-    text-shadow: 0px 0px 4px rgb(255, 179, 179);
-    margin-left: -120px;
-  }
-  .blemon a button {
-    margin-left: 48px;
-    padding: 10px;
-    padding-left: 18px;
-    padding-right: 18px;
-    border: 2px solid white;
-    border-radius: 20px;
-    color: rgb(255, 166, 0);
-    background-color: white;
-    font-weight: 700;
-    font-size: 14px;
-    transition: all 0.4s;
-  }
-  .blemon a button:hover {
-    padding: 11px;
-    padding-left: 23px;
-    padding-right: 23px;
-  }
-  .daunlemon2 {
-    position: relative;
-    width: 60px;
-    margin-left: 138px;
-    margin-top: -70px;
-    filter: drop-shadow(0px 5px 4px rgba(255, 255, 255, 0.889));
-  }
-  .lemon-2 {
-    margin-top: -70px;
-    width: 340px;
-    margin-left: -80px;
-    filter: drop-shadow(10px 10px 4px rgba(87, 66, 34, 0.71));
-    animation: putarlemon 3s ease infinite;
-  }
-  .lemon-1 img {
-    transform: rotate(-10deg);
-    margin-left: -65px;
-    width: 300px;
-    margin-top: -340px;
-    filter: drop-shadow(10px 15px 6px rgba(83, 55, 29, 0.863));
-  }
-  .lemon-3 {
-    position: relative;
-    width: 160px;
-    margin-top: -170px;
-    margin-left: 40px;
-
-    animation: floating 4.5s infinite;
-  }
-  .grape-bg1 {
-    margin-left: -12px;
-    width: 130px;
-    filter: drop-shadow(10px 10px 3px rgba(60, 62, 60, 0.49));
-    margin-top: -80px;
-  }
-  .grape-3 {
-    width: 180px;
-    margin-top: 30px;
-    margin-left: -190px;
-    filter: drop-shadow(10px 10px 4px rgba(50, 24, 54, 0.386));
-    animation: floating 4.5s infinite;
-  }
-  .grape-5 {
-    width: 190px;
-    margin-left: 265px;
-    margin-top: -300px;
-    transform: scaleX(-1);
-    filter: drop-shadow(-5px 5px 4px rgba(17, 70, 31, 0.71));
-  }
-  .grapep {
-    margin-top: -130px;
-    font-size: 40px;
-    font-weight: 800;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    letter-spacing: 15px;
-    text-shadow: 0px 4px 5px rgb(70, 70, 70);
-  }
-  .grape-1 img {
-    width: 310px;
-    margin-left: -40px;
-    filter: drop-shadow(10px 10px 4px rgba(87, 34, 75, 0.71));
-    margin-top: -167px;
-    animation: grape1 3s ease infinite;
-  }
-  .grape-4 {
-    width: 196px;
-    margin-top: -90px;
-    margin-left: 30px;
-    filter: drop-shadow(10px 10px 4px rgba(58, 29, 63, 0.555));
-    animation: grape4 4s ease infinite;
-  }
-  .grape-2 {
-    position: relative;
-    width: 90px;
-    margin-top: -140px;
-    margin-left: 120px;
-    filter: drop-shadow(10px 10px 4px rgba(48, 25, 52, 0.555));
-    animation: grape1 4s ease infinite;
-  }
-  .bulatg {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(98, 0, 178);
-    border-radius: 50%;
-    margin-left: -20px;
-    margin-top: -120px;
-    animation: pulse 3s infinite;
-  }
-  .grapep2 {
-    width: 145px;
-    margin-left: 15px;
-    color: rgb(236, 236, 236);
-    font-size: 13px;
-    font-weight: 500;
-    margin-top: -40px;
-    text-shadow: 0px 0px 4px rgb(255, 179, 179);
-  }
-  .bgrape a button {
-    width: 110px;
-    margin-left: 13px;
-    padding: 10px;
-    padding-left: 18px;
-    padding-right: 18px;
-    border: 2px solid white;
-    border-radius: 20px;
-    color: rgb(152, 0, 203);
-    background-color: white;
-    font-weight: 700;
-    font-size: 14px;
-    transition: all 0.4s;
-  }
-  .bgrape a button:hover {
-    width: 120px;
-
-    padding: 11px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .grape-bg2 {
-    width: 40px;
-    transform: rotate(19deg);
-    margin-left: 105px;
-    margin-top: -68px;
-    filter: drop-shadow(3px 3px 4px rgba(255, 255, 255, 0.71));
-  }
-  #about {
-    height: auto;
-    padding: 60px 7%;
-  }
-
-  /* Judul */
-  #about h1 {
-    font-size: 40px;
-    letter-spacing: 4px;
-    margin-bottom: 40px;
-    margin-top: -10px;
-  }
-
-  /* paragraf card */
-  #about p {
-    font-size: 12px;
-    padding: 25px;
-    line-height: 1.7;
-    background: rgba(255, 255, 255, 0.15);
-
-    box-shadow:
-      0 30px 80px rgba(0, 0, 0, 0.6),
-      0 0 25px rgba(255, 0, 255, 0.5);
-  }
-
-  /* jarak antar card */
-  #about .col-lg-6,
-  #about .col-md-6,
-  #about .col-12 {
-    margin-bottom: 5px;
-  }
-
-  /* matikan efek hover 3D di HP (biar tidak berat) */
-
-  /* glow background diperkecil */
-  #about::before,
-  #about::after {
-    width: 300px;
-    height: 300px;
-    filter: blur(80px);
-  }
-  #contact {
-    padding: 40px 8%;
-  }
-
-  /* TITLE */
-  .contact-title {
-    font-size: 30px;
-    letter-spacing: 3px;
-    margin-bottom: 70px;
-    padding-top: 30px;
-  }
-
-  /* CONTAINER JADI 1 KOLOM */
-  .contact-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  /* CARD */
-  .contact-info,
-  .contact-form {
-    padding: 45px;
-    border-radius: 31px;
-  }
-
-  /* H2 */
-  .contact-info h2,
-  .contact-form h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
-  }
-
-  /* INFO ITEM */
-  .info-item {
-    gap: 12px;
-    margin-bottom: 8px;
-  }
-
-  .info-item span {
-    font-size: 20px;
-  }
-
-  .info-item p {
-    font-size: 13px;
-  }
-
-  /* FORM INPUT */
-  .contact-form input,
-  .contact-form textarea {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  /* TEXTAREA */
-  .contact-form textarea {
-    min-height: 100px;
-  }
-
-  /* BUTTON */
-  .contact-form button {
-    padding: 13px;
-    font-size: 14px;
-  }
-}
-@media (max-width: 768px) {
-  .logo {
-    margin-top: -15px;
-    width: 100px;
-    height: 100px;
-  }
-  .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    margin-left: -70px;
-    margin-bottom: 45px;
-    margin-top: 177px;
-  }
-  .navbar-nav a {
-    margin-left: 5px;
-    margin-bottom: 8px;
-    border-radius: 35px;
-    text-align: center;
-    padding: 5px;
-    width: 5rem;
-    font-size: 14px;
-    font-weight: 700;
-    color: white;
-    text-shadow: 0px 0px 2px grey;
-    border-bottom: 3px solid rgba(255, 231, 144, 0.679);
-    border-top: 2px solid rgba(255, 214, 66, 0.679);
-    transition: all 0.4s ease;
-  }
-  .kiri {
-    margin-top: -40px;
-    padding-left: 0px;
-    margin-left: -10px;
-  }
-  .kiri h1 {
-    color: rgb(250, 255, 95);
-    font-size: 45px;
-    padding-left: 75%;
-    margin-top: -140px;
-  }
-  .kiri p {
-    width: 100%;
-    margin-top: 130px;
-    padding-left: 60px;
-
-    font-size: 14px;
-  }
-  .hero-1 {
-    width: 150px;
-    margin-left: 60px;
-    margin-top: -1290px;
-  }
-  .hero-2 {
-    width: 299px;
-    margin-left: -70px;
-    margin-top: -45px;
-  }
-  .hero-3 {
-    width: 300px;
-    margin-top: -450px;
-    margin-left: -80px;
-  }
-  .hero-4 {
-    width: 90px;
-    margin-top: -780px;
-    margin-left: 80px;
-  }
-  .hero-6 {
-    width: 150px;
-    margin-top: -300px;
-    margin-left: -240px;
-    filter: drop-shadow(10px 10px 17px rgba(255, 170, 0, 0.536));
-  }
-  .flavour-1 {
-    transform: scaleX(-1);
-    width: 180px;
-    margin-left: -240px;
-  }
-  .flavour-2 {
-    transform: scaleX(1);
-    width: 250px;
-    margin-left: 166px;
-    margin-top: -280px;
-  }
-  .flavour-3 {
-    margin-left: 10px;
-    margin-top: -150px;
-    font-size: 60px;
-    font-weight: 800;
-  }
-  .stramberyh {
-    margin-top: 10px;
-    margin-left: -40px;
-  }
-  .stramberyh img {
-    width: 80px;
-  }
-  .stramberyh img:hover {
-    transform: rotate(0deg);
-    width: 90px;
-  }
-  .stramberyp img {
-    width: 100px;
-    margin-top: -60px;
-    margin-left: 20px;
-  }
-  .lemonh {
-    margin-top: 60px;
-  }
-  .lemonh img {
-    margin-left: -83px;
-    width: 300px;
-  }
-  .lemonh img:hover {
-    width: 330px;
-  }
-  .lemonp {
-    margin-left: 40px;
-    margin-top: -100px;
-  }
-  .lemonp img {
-    width: 120px;
-  }
-  .berrih {
-    margin-top: -8px;
-    margin-left: -40px;
-  }
-  .berrih img {
-    width: 195px;
-  }
-  .berrip img {
-    width: 90px;
-    margin-top: -90px;
-    margin-left: 20px;
-  }
-  .straw-bg1 {
-    margin-top: 10px;
-    margin-left: -50px;
-    width: 180px;
-  }
-  .straw-1p {
-    margin-top: -20px;
-    font-size: 40px;
-    letter-spacing: 3px;
-  }
-  .straw-0 {
-    margin-left: -280px;
-    filter: drop-shadow(8px 10px 4px rgba(65, 63, 63, 0.748));
-    animation: putarstraw 3s ease infinite;
-  }
-  .straw-1 img {
-    width: 110px;
-    margin-top: -510px;
-    margin-left: 50px !important;
-  }
-  .straw-2 {
-    width: 110px;
-    margin-left: 80px;
-    margin-top: -390px;
-    transform: scale(1.3) rotate(-5deg);
-    filter: drop-shadow(7px 7px 10px rgba(59, 59, 59, 0.656));
-    animation: floating 5s ease infinite;
-  }
-  .bulat {
-    position: absolute;
-    margin-left: -20px;
-    margin-top: -260px;
-    animation: pulse 4s infinite;
-  }
-  .straw-p {
-    width: 150px;
-    color: rgb(255, 255, 255);
-    font-size: 12px;
-    font-weight: 500;
-    margin-top: 0px;
-  }
-  .bstraw a button {
-    margin-left: -3px;
-    padding: 10px;
-    padding-left: 18px;
-    padding-right: 18px;
-    border: 2px solid white;
-    border-radius: 20px;
-    color: rgb(255, 68, 99);
-    background-color: white;
-    font-weight: 700;
-    font-size: 14px;
-    transition: all 0.4s;
-  }
-  .bstraw a button:hover {
-    padding: 11px;
-    padding-left: 23px;
-    padding-right: 23px;
-  }
-  .straw-bg2 {
-    transform: rotate(25deg);
-    margin-left: 86px;
-    width: 60px;
-    margin-top: -70px;
-    filter: drop-shadow(4px 4px 2px rgba(255, 255, 255, 0.889));
-  }
-  @keyframes putarstraw {
-    0% {
-      transform: scale(0.65) rotate(-35deg);
-    }
-    50% {
-      transform: scale(0.7) rotate(-30deg);
-    }
-    100% {
-      transform: scale(0.65) rotate(-35deg);
-    }
-  }
-  .daunlemon {
-    width: 180px;
-    margin-left: 265px;
-    margin-top: 0px;
-    filter: drop-shadow(10px 15px 6px rgba(73, 55, 31, 0.863));
-    animation: floating 4s infinite;
-  }
-  .lemon-h1 {
-    margin-top: -50px;
-    font-size: 40px;
-    font-weight: 800;
-    margin-left: -98px;
-    color: rgb(255, 255, 255);
-    letter-spacing: 15px;
-    text-shadow: 0px 4px 5px rgb(70, 70, 70);
-  }
-  .lemon-p {
-    width: 370px;
-    color: rgb(236, 236, 236);
-    font-size: 13px;
-    font-weight: 500;
-    margin-top: -55px;
-    text-shadow: 0px 0px 4px rgb(255, 179, 179);
-    margin-left: -120px;
-  }
-  .blemon a button {
-    margin-left: 48px;
-    padding: 10px;
-    padding-left: 18px;
-    padding-right: 18px;
-    border: 2px solid white;
-    border-radius: 20px;
-    color: rgb(255, 166, 0);
-    background-color: white;
-    font-weight: 700;
-    font-size: 14px;
-    transition: all 0.4s;
-  }
-  .blemon a button:hover {
-    padding: 11px;
-    padding-left: 23px;
-    padding-right: 23px;
-  }
-  .daunlemon2 {
-    position: relative;
-    width: 60px;
-    margin-left: 138px;
-    margin-top: -70px;
-    filter: drop-shadow(0px 5px 4px rgba(255, 255, 255, 0.889));
-  }
-  .lemon-2 {
-    margin-top: -70px;
-    width: 340px;
-    margin-left: -80px;
-    filter: drop-shadow(10px 10px 4px rgba(87, 66, 34, 0.71));
-    animation: putarlemon 3s ease infinite;
-  }
-  .lemon-1 img {
-    transform: rotate(-10deg);
-    margin-left: -65px;
-    width: 300px;
-    margin-top: -340px;
-    filter: drop-shadow(10px 15px 6px rgba(83, 55, 29, 0.863));
-  }
-  .lemon-3 {
-    position: relative;
-    width: 160px;
-    margin-top: -170px;
-    margin-left: 40px;
-
-    animation: floating 4.5s infinite;
-  }
-  .grape-bg1 {
-    margin-left: -12px;
-    width: 130px;
-    filter: drop-shadow(10px 10px 3px rgba(60, 62, 60, 0.49));
-    margin-top: -80px;
-  }
-  .grape-3 {
-    width: 180px;
-    margin-top: 30px;
-    margin-left: -190px;
-    filter: drop-shadow(10px 10px 4px rgba(50, 24, 54, 0.386));
-    animation: floating 4.5s infinite;
-  }
-  .grape-5 {
-    width: 190px;
-    margin-left: 265px;
-    margin-top: -300px;
-    transform: scaleX(-1);
-    filter: drop-shadow(-5px 5px 4px rgba(17, 70, 31, 0.71));
-  }
-  .grapep {
-    margin-top: -130px;
-    font-size: 40px;
-    font-weight: 800;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    letter-spacing: 15px;
-    text-shadow: 0px 4px 5px rgb(70, 70, 70);
-  }
-  .grape-1 img {
-    width: 310px;
-    margin-left: -40px;
-    filter: drop-shadow(10px 10px 4px rgba(87, 34, 75, 0.71));
-    margin-top: -167px;
-    animation: grape1 3s ease infinite;
-  }
-  .grape-4 {
-    width: 196px;
-    margin-top: -90px;
-    margin-left: 30px;
-    filter: drop-shadow(10px 10px 4px rgba(58, 29, 63, 0.555));
-    animation: grape4 4s ease infinite;
-  }
-  .grape-2 {
-    position: relative;
-    width: 90px;
-    margin-top: -140px;
-    margin-left: 120px;
-    filter: drop-shadow(10px 10px 4px rgba(48, 25, 52, 0.555));
-    animation: grape1 4s ease infinite;
-  }
-  .bulatg {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(98, 0, 178);
-    border-radius: 50%;
-    margin-left: -20px;
-    margin-top: -120px;
-    animation: pulse 3s infinite;
-  }
-  .grapep2 {
-    width: 145px;
-    margin-left: 15px;
-    color: rgb(236, 236, 236);
-    font-size: 13px;
-    font-weight: 500;
-    margin-top: -40px;
-    text-shadow: 0px 0px 4px rgb(255, 179, 179);
-  }
-  .bgrape a button {
-    width: 110px;
-    margin-left: 13px;
-    padding: 10px;
-    padding-left: 18px;
-    padding-right: 18px;
-    border: 2px solid white;
-    border-radius: 20px;
-    color: rgb(152, 0, 203);
-    background-color: white;
-    font-weight: 700;
-    font-size: 14px;
-    transition: all 0.4s;
-  }
-  .bgrape a button:hover {
-    width: 120px;
-
-    padding: 11px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .grape-bg2 {
-    width: 40px;
-    transform: rotate(19deg);
-    margin-left: 105px;
-    margin-top: -68px;
-    filter: drop-shadow(3px 3px 4px rgba(255, 255, 255, 0.71));
-  }
-  #about {
-    height: auto;
-    padding: 60px 7%;
-  }
-
-  /* Judul */
-  #about h1 {
-    font-size: 40px;
-    letter-spacing: 4px;
-    margin-bottom: 40px;
-    margin-top: -10px;
-  }
-
-  /* paragraf card */
-  #about p {
-    font-size: 12px;
-    padding: 25px;
-    line-height: 1.7;
-    background: rgba(255, 255, 255, 0.15);
-
-    box-shadow:
-      0 30px 80px rgba(0, 0, 0, 0.6),
-      0 0 25px rgba(255, 0, 255, 0.5);
-  }
-
-  /* jarak antar card */
-  #about .col-lg-6,
-  #about .col-md-6,
-  #about .col-12 {
-    margin-bottom: 5px;
-  }
-
-  /* matikan efek hover 3D di HP (biar tidak berat) */
-
-  /* glow background diperkecil */
-  #about::before,
-  #about::after {
-    width: 300px;
-    height: 300px;
-    filter: blur(80px);
-  }
-  #contact {
-    padding: 40px 8%;
-  }
-
-  /* TITLE */
-  .contact-title {
-    font-size: 30px;
-    letter-spacing: 3px;
-    margin-bottom: 70px;
-    padding-top: 30px;
-  }
-
-  /* CONTAINER JADI 1 KOLOM */
-  .contact-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  /* CARD */
-  .contact-info,
-  .contact-form {
-    padding: 45px;
-    border-radius: 31px;
   }
 
   /* H2 */
