@@ -1,39 +1,108 @@
+/* =========================
+   GLOBAL
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-repeat: no-repeat;
+  font-family: "Segoe UI", sans-serif;
+  overflow-x: hidden;
 }
+
+/* =========================
+   PARALLAX BACKGROUND
+========================= */
+.container-fluid {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* =========================
+   NAVBAR
+========================= */
 .navbar-nav {
-  margin-left: 650px;
+  margin-left: -190px;
   margin-top: 55px;
 }
+
 .navbar-nav a {
   font-size: 22px;
   font-weight: 700;
   color: white;
   text-shadow: 2px 2px 2px grey;
-  border-bottom: 1px solid rgba(255, 255, 255, 0);
-  transition: all 0.5s;
+  border-bottom: 2px solid transparent;
+  transition: all 0.4s ease;
 }
+
 .navbar-nav a:hover {
   color: rgb(248, 255, 48);
-  border-bottom: 2px solid;
+  border-bottom: 2px solid rgb(248, 255, 48);
+  transform: translateY(-3px);
 }
+
+/* =========================
+   HERO SECTION
+========================= */
 .kiri {
   padding-left: 200px;
+  animation: fadeSlideLeft 1.5s ease forwards;
 }
+
 .kiri h1 {
   color: rgb(250, 255, 95);
   text-align: center;
   font-size: 160px;
-  font-weight: 700;
-  text-shadow: 5px 5px 5px rgb(94, 104, 40);
+  font-weight: 800;
+  text-shadow: 5px 5px 7px rgb(90, 83, 38);
+  animation: fadeZoom 1.5s ease forwards;
+  transition: 0.4s ease;
 }
+
 .kiri p {
   padding-left: 40px;
   color: white;
   font-weight: 500;
   font-size: 21px;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 2px 2px 4px rgb(81, 69, 33);
+  animation: fadeZoom 2s ease forwards;
 }
+
+/* =========================
+   HERO IMAGE FLOATING
+========================= */
+.kanan img {
+  animation: floating 3s ease-in-out infinite;
+}
+
+.kanan img:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.kanan img:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.kanan img:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+/* =========================
+   FLAVOUR SECTION
+========================= */
+.flavour {
+  position: relative;
+  overflow: hidden;
+}
+
 .flavour h2 {
   font-size: 40px;
   margin-top: 70px;
@@ -42,3 +111,1434 @@ body {
   text-shadow: 1px 1px 1px black;
   margin-bottom: 50px;
 }
+
+/* .flavour img {
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
+}
+
+.flavour img:hover {
+  transform: scale(1.1) rotate(-5deg);
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.4));
+} */
+.stramberyh {
+  width: 150px;
+  margin-top: -220px;
+  margin-left: 180px;
+  animation: floating 3s ease infinite;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.536));
+  transition: all 0.5s;
+}
+.stramberyh img {
+  transition: all 0.5s;
+  width: 150px;
+  filter: drop-shadow(0px 0px 40px rgba(255, 53, 53, 0.834));
+  transform: scale(1.1) rotate(-5deg);
+}
+.stramberyp {
+  animation: floating 4s ease infinite;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.536));
+}
+.stramberyh img:hover {
+  transform: scale(1.3) rotate(0deg);
+  width: 155px;
+  filter: drop-shadow(0px 0px 60px rgb(255, 53, 53));
+}
+
+.lemonh {
+  margin-top: -250px;
+  animation: floating 4s ease infinite;
+  filter: drop-shadow(10px 10px 3px rgba(0, 0, 0, 0.536));
+  transition: all 0.5s;
+}
+.lemonh img {
+  transition: all 0.5s;
+  width: 450px;
+  filter: drop-shadow(0px 0px 40px rgba(255, 251, 21, 0.808));
+  transform: scale(1) rotate(0deg);
+}
+.lemonh img:hover {
+  transform: scale(1.1) rotate(0deg);
+  width: 470px;
+  filter: drop-shadow(0px 0px 60px rgb(255, 251, 21));
+}
+.lemonp {
+  margin-left: 160px;
+  margin-top: -160px;
+  animation: floating 4.5s ease infinite;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.536));
+}
+.lemonp img {
+  width: 200px;
+}
+
+.berrih {
+  margin-top: -250px;
+  margin-left: -150px;
+  animation: floating 5s ease infinite;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.536));
+  transition: all 0.5s;
+}
+.berrih img {
+  width: 370px;
+  transition: all 0.5s;
+  filter: drop-shadow(0px 0px 40px rgba(177, 16, 201, 0.734));
+  transform: scale(1.1) rotate(5deg);
+}
+.berrih img:hover {
+  transform: scale(1.3) rotate(0deg);
+  filter: drop-shadow(0px 0px 60px rgb(176, 16, 201));
+}
+.berrip img {
+  width: 180px;
+  margin-top: -150px;
+  margin-left: -50px;
+  animation: floating 5.5s ease infinite;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.536));
+}
+
+/* =========================
+   STRAWBERRY SECTION
+========================= */
+.straw-bg1 {
+  margin-left: -90px;
+  width: 300px;
+  filter: drop-shadow(10px -10px 3px rgba(60, 62, 60, 0.49));
+  animation: daun3 5s ease infinite;
+}
+
+.straw-0 {
+  margin-left: 100px;
+  filter: drop-shadow(8px 10px 4px rgba(65, 63, 63, 0.748));
+  animation: putarstraw 3s ease infinite;
+}
+.straw-1 {
+  filter: drop-shadow(0px 10px 27px rgba(255, 0, 132, 0.941));
+  animation: floating 3s ease infinite;
+}
+.straw-1 img {
+  width: 180px;
+  margin-top: -380px;
+  margin-left: 170px;
+  transform: scale(1.1) rotate(8deg);
+  margin-left: 300px;
+  filter: drop-shadow(15px 15px 5px rgba(63, 63, 63, 0.621));
+}
+.straw-2 {
+  width: 200px;
+  margin-left: 350px;
+  margin-top: -130px;
+  transform: scale(1.3) rotate(-5deg);
+  filter: drop-shadow(7px 7px 10px rgba(59, 59, 59, 0.656));
+  animation: floating 5s ease infinite;
+}
+.bulat {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 68, 149);
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 220px;
+  margin-top: -120px;
+  animation: pulse 3s infinite;
+}
+.bstraw a button {
+  padding: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: rgb(255, 68, 99);
+  background-color: white;
+  font-weight: 700;
+  font-size: 18px;
+  transition: all 0.4s;
+}
+.bstraw a button:hover {
+  padding: 12px;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+.straw-bg2 {
+  transform: rotate(25deg);
+  margin-left: 109px;
+  width: 70px;
+  margin-top: -81px;
+  filter: drop-shadow(4px 4px 2px rgba(255, 255, 255, 0.889));
+}
+#strawberry {
+  background: linear-gradient(rgb(255, 66, 195), rgb(255, 81, 0));
+  height: 100vh;
+}
+#lemon {
+  background: linear-gradient(rgb(255, 81, 0), rgb(248, 255, 41));
+  height: 100vh;
+}
+.blemon a button {
+  margin-left: 168px;
+  padding: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: rgb(255, 166, 0);
+  background-color: white;
+  font-weight: 700;
+  font-size: 18px;
+  transition: all 0.4s;
+}
+.blemon a button:hover {
+  padding: 12px;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+.lemon-0 {
+  width: 300px;
+}
+.daunlemon {
+  width: 280px;
+  margin-left: 1250px;
+  filter: drop-shadow(10px 15px 6px rgba(73, 55, 31, 0.863));
+  animation: floating 4s infinite;
+}
+.lemon-h1 {
+  margin-top: -150px;
+  font-size: 50px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  letter-spacing: 15px;
+  text-shadow: 0px 4px 5px rgb(70, 70, 70);
+}
+.lemon-p {
+  color: rgb(236, 236, 236);
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 100px;
+  text-shadow: 0px 0px 4px rgb(255, 179, 179);
+  padding-left: 170px;
+  padding-right: 40px;
+}
+.daunlemon2 {
+  position: relative;
+  width: 80px;
+  margin-left: 280px;
+  margin-top: -80px;
+  filter: drop-shadow(0px 5px 4px rgba(255, 255, 255, 0.889));
+}
+.lemon-1 {
+  filter: drop-shadow(-8px 10px 10px rgba(255, 251, 132, 0.589));
+  animation: floating 3s ease infinite;
+}
+.lemon-1 img {
+  transform: rotate(-10deg);
+  margin-left: -40px;
+  width: 550px;
+  margin-top: -520px;
+  filter: drop-shadow(10px 15px 6px rgba(83, 55, 29, 0.863));
+}
+.lemon-2 {
+  width: 500px;
+  margin-left: -30px;
+  filter: drop-shadow(10px 10px 4px rgba(87, 66, 34, 0.71));
+  animation: putarlemon 3s ease infinite;
+}
+.lemon-3 {
+  position: relative;
+  width: 250px;
+  margin-top: -300px;
+  margin-left: 240px;
+  z-index: 999 !important;
+  filter: drop-shadow(10px 10px 6px rgba(181, 110, 10, 0.863));
+  animation: floating 4.5s infinite;
+}
+
+#grape {
+  background: linear-gradient(rgb(248, 255, 33), rgb(182, 0, 166));
+  height: 100vh;
+}
+.grape-bg1 {
+  margin-left: -90px;
+  width: 300px;
+  filter: drop-shadow(10px 10px 3px rgba(60, 62, 60, 0.49));
+  margin-top: -80px;
+  animation: floating 5.5s infinite;
+}
+.grape-1 img {
+  width: 500px;
+  margin-left: 160px;
+  filter: drop-shadow(10px 10px 4px rgba(87, 34, 75, 0.71));
+  margin-top: -250px;
+  animation: grape1 3s ease infinite;
+}
+.grape-2 {
+  position: relative;
+  width: 150px;
+  margin-top: -200px;
+  margin-left: 410px;
+  filter: drop-shadow(10px 10px 4px rgba(48, 25, 52, 0.555));
+  animation: grape1 4s ease infinite;
+}
+.grape-3 {
+  width: 250px;
+  margin-top: 100px;
+  margin-left: -230px;
+  filter: drop-shadow(10px 10px 4px rgba(65, 26, 71, 0.71));
+  animation: floating 4.5s infinite;
+}
+.grape-4 {
+  width: 250px;
+  margin-top: -60px;
+  margin-left: 350px;
+  filter: drop-shadow(10px 10px 4px rgba(58, 29, 63, 0.555));
+  animation: grape4 3s ease infinite;
+}
+.grapep {
+  margin-top: -260px;
+  font-size: 50px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  letter-spacing: 15px;
+  text-shadow: 0px 4px 5px rgb(70, 70, 70);
+}
+.grape-5 {
+  width: 300px;
+  margin-left: 1224px;
+  margin-top: -440px;
+  transform: scaleX(-1);
+  filter: drop-shadow(-5px 5px 4px rgba(17, 70, 31, 0.71));
+}
+.bgrape a button {
+  padding: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: rgb(152, 0, 203);
+  background-color: white;
+  font-weight: 700;
+  font-size: 18px;
+  transition: all 0.4s;
+}
+.bulatg {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(98, 0, 178);
+  border-radius: 50%;
+  margin-left: 250px;
+  margin-top: -150px;
+  animation: pulse 3s infinite;
+}
+.bgrape a button:hover {
+  padding: 12px;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+.grapep2 {
+  color: rgb(236, 236, 236);
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 50px;
+  text-shadow: 0px 0px 4px rgb(255, 179, 179);
+}
+.grape-bg2 {
+  width: 70px;
+  transform: rotate(19deg);
+  margin-left: 110px;
+  margin-top: -75px;
+  filter: drop-shadow(3px 3px 4px rgba(255, 255, 255, 0.71));
+}
+/* =========================
+   ABOUT SECTION
+========================= */
+
+#about {
+  background: linear-gradient(rgb(182, 0, 166), black);
+  height: 100vh;
+}
+
+/* =========================
+   BACKGROUND GLOW
+========================= */
+
+#about::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 0, 200, 0.4), transparent);
+  top: -150px;
+  left: -150px;
+  filter: blur(120px);
+}
+
+#about::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(120, 0, 255, 0.4), transparent);
+  bottom: -150px;
+  right: -150px;
+  filter: blur(120px);
+}
+
+/* =========================
+   ROW FLEX FIX
+========================= */
+
+#about .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+/* kolom flex */
+#about .col-lg-4,
+#about .col-md-6,
+#about .col-4 {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+#about h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: 8px;
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: 40px;
+
+  text-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(255, 0, 200, 0.6);
+
+  animation: fadeDown 1s ease;
+  transform: translateZ(60px);
+}
+
+/* garis dekorasi */
+
+/* =========================
+   CARD ABOUT
+========================= */
+
+#about p {
+  flex: 1;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+
+  color: white;
+  padding: 35px;
+  border-radius: 20px;
+
+  font-size: 17px;
+  line-height: 1.9;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    inset 0 0 15px rgba(255, 255, 255, 0.08);
+
+  transform-style: preserve-3d;
+
+  transition: all 0.5s ease;
+
+  animation: fadeUp 1s ease;
+
+  display: flex;
+  align-items: center;
+
+  text-align: justify;
+}
+
+/* =========================
+   3D HOVER EFFECT
+========================= */
+
+#about p:hover {
+  transform: rotateX(8deg) rotateY(-8deg) translateY(-15px) scale(1.05);
+
+  background: rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.6),
+    0 0 25px rgba(255, 0, 255, 0.5);
+}
+
+/* =========================
+   FLOATING PARTICLES
+========================= */
+
+#about span {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: float 10s linear infinite;
+}
+
+#about span:nth-child(1) {
+  left: 10%;
+  top: 90%;
+  animation-duration: 8s;
+}
+#about span:nth-child(2) {
+  left: 30%;
+  top: 95%;
+  animation-duration: 10s;
+}
+#about span:nth-child(3) {
+  left: 50%;
+  top: 85%;
+  animation-duration: 7s;
+}
+#about span:nth-child(4) {
+  left: 70%;
+  top: 92%;
+  animation-duration: 9s;
+}
+#about span:nth-child(5) {
+  left: 85%;
+  top: 88%;
+  animation-duration: 11s;
+}
+.logo {
+  width: 160px;
+  height: 160px;
+}
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-900px);
+    opacity: 0;
+  }
+}
+/* =========================
+   CONTACT SECTION
+========================= */
+
+#contact {
+  min-height: 100vh;
+
+  padding: 100px 10%;
+
+  background: linear-gradient(to bottom, black, #ff7a00);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.contact-title {
+  text-align: center;
+
+  font-size: 60px;
+
+  color: white;
+
+  letter-spacing: 5px;
+
+  margin-bottom: 70px;
+
+  font-weight: 800;
+
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container-fluid,
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.contact-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 50px;
+}
+
+/* =========================
+   CARD STYLE
+========================= */
+
+.contact-info,
+.contact-form {
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 20px;
+
+  padding: 40px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+
+  transition: 0.3s;
+}
+
+/* Hover */
+
+.contact-info:hover,
+.contact-form:hover {
+  transform: translateY(-6px);
+}
+
+/* =========================
+   INFO
+========================= */
+
+.contact-info h2 {
+  color: white;
+
+  margin-bottom: 30px;
+
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.info-item {
+  display: flex;
+
+  gap: 15px;
+
+  margin-bottom: 25px;
+
+  align-items: center;
+}
+
+.info-item span {
+  font-size: 25px;
+}
+
+.info-item p {
+  color: white;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.info-item strong {
+  color: white;
+
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* =========================
+   FORM
+========================= */
+
+.contact-form h2 {
+  color: white;
+
+  margin-bottom: 30px;
+
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.contact-form form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+/* INPUT */
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+
+  border-radius: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  background: rgba(0, 0, 0, 0.5);
+
+  color: white;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+/* Placeholder */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Focus */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff7a00;
+}
+
+/* TEXTAREA */
+
+.contact-form textarea {
+  min-height: 140px;
+
+  resize: none;
+}
+
+/* BUTTON */
+
+.contact-form button {
+  padding: 15px;
+
+  border-radius: 10px;
+
+  border: none;
+
+  background: #ff7a00;
+
+  color: white;
+
+  font-weight: bold;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* Hover */
+
+.contact-form button:hover {
+  background: #ff8c1a;
+
+  transform: translateY(-3px);
+}
+
+@keyframes daun {
+  0% {
+    transform: scaleX(-1) translateY(0px) translateX(5px);
+  }
+  50% {
+    transform: scaleX(-1) translateY(-7px) translateX(0px);
+  }
+  100% {
+    transform: scaleX(-1) translateY(0px) translateX(5px);
+  }
+}
+@keyframes daun2 {
+  0% {
+    transform: scaleX(1) translateY(0px) translateX(6px);
+  }
+  50% {
+    transform: scaleX(1) translateY(-10px) translateX(0px);
+  }
+  100% {
+    transform: scaleX(1) translateY(0px) translateX(6px);
+  }
+}
+@keyframes daun3 {
+  0% {
+    transform: rotate(120deg) translateX(0px);
+  }
+  50% {
+    transform: rotate(120deg) translateX(-12px);
+  }
+  100% {
+    transform: rotate(120deg) translateX(0px);
+  }
+}
+
+@keyframes fadeSlideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes putarstraw {
+  0% {
+    transform: scale(0.8) rotate(-30deg);
+  }
+  50% {
+    transform: scale(0.83) rotate(-25deg);
+  }
+  100% {
+    transform: scale(0.8) rotate(-30deg);
+  }
+}
+@keyframes putarlemon {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.03) rotate(10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes grape1 {
+  0% {
+    transform: rotate(5deg) translateY(10px);
+  }
+  50% {
+    transform: rotate(5deg) translateY(20px);
+  }
+  100% {
+    transform: rotate(5deg) translateY(10px);
+  }
+}
+@keyframes grape4 {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.06) rotate(5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes fadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* =========================
+   EXTRA EFFECT (Glow Text)
+========================= */
+
+.kiri h1:hover {
+  text-shadow:
+    0 0 15px yellow,
+    0 0 30px orange,
+    0 0 40px red;
+  transition: 0.4s ease;
+}
+.hero-1 {
+  width: 350px;
+  margin-left: 398px;
+  margin-top: -955px;
+  filter: drop-shadow(20px 10px 3px rgba(15, 49, 19, 0.656));
+}
+.hero-2 {
+  width: 400px;
+  margin-left: 20px;
+  margin-top: -100px;
+  filter: drop-shadow(17px 14px 10px rgba(255, 248, 33, 0.745));
+}
+.hero-3 {
+  width: 600px;
+  margin-top: -520px;
+  filter: drop-shadow(0px 20px 25px rgba(255, 255, 0, 0.756));
+}
+.hero-4 {
+  width: 150px;
+  margin-top: -900px;
+  margin-left: 340px;
+  filter: drop-shadow(15px 7px 12px rgba(43, 255, 24, 0.837));
+}
+.flavour-1 {
+  transform: scaleX(-1);
+  width: 320px;
+  margin-left: -1220px;
+  filter: drop-shadow(-10px -10px 2px rgba(0, 0, 0, 0.734));
+  animation: daun 5s infinite;
+}
+.flavour-2 {
+  transform: scaleX(1);
+  width: 400px;
+  margin-left: 1109px;
+  margin-top: -600px;
+  filter: drop-shadow(13px 12px 3px rgba(0, 0, 0, 0.734));
+  animation: daun2 4s infinite;
+}
+.flavour-3 {
+  margin-top: -390px;
+  font-size: 80px;
+  font-weight: 800;
+  color: rgb(255, 251, 247);
+  text-shadow:
+    0 0 20px rgb(255, 119, 0),
+    0 0 40px rgb(255, 251, 0);
+}
+.stramberyp img {
+  width: 200px;
+  margin-top: -120px;
+  margin-left: 190px;
+}
+.straw-1p {
+  margin-top: -200px;
+  font-size: 50px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  letter-spacing: 15px;
+  text-shadow: 0px 4px 5px rgb(70, 70, 70);
+}
+.straw-p {
+  color: rgb(236, 236, 236);
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 50px;
+  text-shadow: 0px 0px 4px rgb(255, 179, 179);
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .logo {
+    margin-top: -25px;
+    width: 110px;
+    height: 110px;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: -100px;
+    margin-bottom: 45px;
+    margin-top: 77px;
+  }
+  .navbar-nav a {
+    margin-bottom: 8px;
+    border-radius: 35px;
+
+    text-align: center;
+    padding: 5px;
+    width: 80px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0px 0px 2px grey;
+    border-bottom: 2px solid rgba(255, 231, 144, 0.679);
+    border-top: 2px solid rgba(255, 231, 144, 0.679);
+    transition: all 0.4s ease;
+  }
+  .kiri {
+    margin-top: -40px;
+    padding-left: 30px;
+  }
+  .kiri h1 {
+    color: rgb(250, 255, 95);
+    font-size: 80px;
+    padding-left: 80px;
+  }
+  .kiri p {
+    margin-top: 50px;
+    padding-left: 50px;
+
+    font-size: 15px;
+  }
+  .hero-1 {
+    width: 170px;
+    margin-left: 60px;
+    margin-top: -1190px;
+  }
+  .hero-2 {
+    width: 300px;
+    margin-left: -70px;
+    margin-top: 50px;
+  }
+  .hero-3 {
+    width: 350px;
+    margin-top: -450px;
+    margin-left: -100px;
+  }
+  .hero-4 {
+    width: 100px;
+    margin-top: -780px;
+    margin-left: 80px;
+  }
+  .flavour-1 {
+    transform: scaleX(-1);
+    width: 180px;
+    margin-left: -310px;
+  }
+  .flavour-2 {
+    transform: scaleX(1);
+    width: 250px;
+    margin-left: 236px;
+    margin-top: -280px;
+  }
+  .flavour-3 {
+    margin-top: -190px;
+    font-size: 60px;
+    font-weight: 800;
+  }
+  .stramberyh {
+    margin-top: 20px;
+    margin-left: -30px;
+  }
+  .stramberyh img {
+    width: 80px;
+  }
+  .stramberyh img:hover {
+    transform: rotate(0deg);
+    width: 95px;
+  }
+  .stramberyp img {
+    width: 100px;
+    margin-top: -70px;
+    margin-left: 20px;
+  }
+  .lemonh {
+    margin-top: -10px;
+  }
+  .lemonh img {
+    margin-left: -83px;
+    width: 320px;
+  }
+  .lemonh img:hover {
+    width: 330px;
+  }
+  .lemonp {
+    margin-left: 30px;
+    margin-top: -130px;
+  }
+  .lemonp img {
+    width: 150px;
+  }
+  .berrih {
+    margin-top: 0px;
+    margin-left: -40px;
+  }
+  .berrih img {
+    width: 200px;
+  }
+  .berrip img {
+    width: 100px;
+    margin-top: -90px;
+    margin-left: 30px;
+  }
+  .straw-bg1 {
+    margin-top: 10px;
+    margin-left: -50px;
+    width: 180px;
+  }
+  .straw-1p {
+    display: grid;
+    margin-top: -100px;
+    font-size: 50px;
+    letter-spacing: 3px;
+  }
+  .straw-0 {
+    margin-left: -220px;
+    filter: drop-shadow(8px 10px 4px rgba(65, 63, 63, 0.748));
+    animation: putarstraw 3s ease infinite;
+  }
+  .straw-1 img {
+    width: 100px;
+    margin-top: -510px;
+    margin-left: 70px !important;
+  }
+  .straw-2 {
+    width: 120px;
+    margin-left: 90px;
+    margin-top: -390px;
+    transform: scale(1.3) rotate(-5deg);
+    filter: drop-shadow(7px 7px 10px rgba(59, 59, 59, 0.656));
+    animation: floating 5s ease infinite;
+  }
+  .bulat {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -260px;
+    animation: pulse 3s infinite;
+  }
+  .straw-p {
+    width: 180px;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .bstraw a button {
+    margin-left: -3px;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: rgb(255, 68, 99);
+    background-color: white;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.4s;
+  }
+  .bstraw a button:hover {
+    padding: 10px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  .straw-bg2 {
+    transform: rotate(25deg);
+    margin-left: 89px;
+    width: 60px;
+    margin-top: -75px;
+    filter: drop-shadow(4px 4px 2px rgba(255, 255, 255, 0.889));
+  }
+  @keyframes putarstraw {
+    0% {
+      transform: scale(0.55) rotate(-35deg);
+    }
+    50% {
+      transform: scale(0.6) rotate(-30deg);
+    }
+    100% {
+      transform: scale(0.55) rotate(-35deg);
+    }
+  }
+  .daunlemon {
+    width: 180px;
+    margin-left: 340px;
+    margin-top: 0px;
+    filter: drop-shadow(10px 15px 6px rgba(73, 55, 31, 0.863));
+    animation: floating 4s infinite;
+  }
+  .lemon-h1 {
+    margin-top: -40px;
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 15px;
+    text-shadow: 0px 4px 5px rgb(70, 70, 70);
+  }
+  .lemon-p {
+    width: 360px;
+    color: rgb(236, 236, 236);
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: -55px;
+    text-shadow: 0px 0px 4px rgb(255, 179, 179);
+    margin-left: -100px;
+  }
+  .blemon a button {
+    margin-left: 68px;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: rgb(255, 166, 0);
+    background-color: white;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.4s;
+  }
+  .blemon a button:hover {
+    padding: 10px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  .daunlemon2 {
+    position: relative;
+    width: 70px;
+    margin-left: 163px;
+    margin-top: -70px;
+    filter: drop-shadow(0px 5px 4px rgba(255, 255, 255, 0.889));
+  }
+  .lemon-2 {
+    margin-top: -70px;
+    width: 280px;
+    margin-left: -70px;
+    filter: drop-shadow(10px 10px 4px rgba(87, 66, 34, 0.71));
+    animation: putarlemon 3s ease infinite;
+  }
+  .lemon-1 img {
+    transform: rotate(-10deg);
+    margin-left: -75px;
+    width: 320px;
+    margin-top: -270px;
+    filter: drop-shadow(10px 15px 6px rgba(83, 55, 29, 0.863));
+  }
+  .lemon-3 {
+    position: relative;
+    width: 160px;
+    margin-top: -170px;
+    margin-left: 45px;
+    z-index: 999 !important;
+    filter: drop-shadow(10px 10px 6px rgba(181, 110, 10, 0.863));
+    animation: floating 4.5s infinite;
+  }
+  .grape-bg1 {
+    margin-left: -12px;
+    width: 170px;
+    filter: drop-shadow(10px 10px 3px rgba(60, 62, 60, 0.49));
+    margin-top: -70px;
+  }
+  .grape-3 {
+    width: 200px;
+    margin-top: 50px;
+    margin-left: -190px;
+    filter: drop-shadow(10px 10px 4px rgba(65, 26, 71, 0.71));
+    animation: floating 4.5s infinite;
+  }
+  .grape-5 {
+    width: 250px;
+    margin-left: 280px;
+    margin-top: -300px;
+    transform: scaleX(-1);
+    filter: drop-shadow(-5px 5px 4px rgba(17, 70, 31, 0.71));
+  }
+  .grapep {
+    margin-top: -190px;
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 15px;
+    text-shadow: 0px 4px 5px rgb(70, 70, 70);
+  }
+  .grape-1 img {
+    width: 300px;
+    margin-left: -30px;
+    filter: drop-shadow(10px 10px 4px rgba(87, 34, 75, 0.71));
+    margin-top: -167px;
+    animation: grape1 3s ease infinite;
+  }
+  .grape-4 {
+    width: 166px;
+    margin-top: -30px;
+    margin-left: 70px;
+    filter: drop-shadow(10px 10px 4px rgba(58, 29, 63, 0.555));
+    animation: grape4 3s ease infinite;
+  }
+  .grape-2 {
+    position: relative;
+    width: 110px;
+    margin-top: -160px;
+    margin-left: 110px;
+    filter: drop-shadow(10px 10px 4px rgba(48, 25, 52, 0.555));
+    animation: grape1 4s ease infinite;
+  }
+  .bulatg {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(98, 0, 178);
+    border-radius: 50%;
+    margin-left: -20px;
+    margin-top: -150px;
+    animation: pulse 3s infinite;
+  }
+  .grapep2 {
+    width: 175px;
+    margin-left: 15px;
+    color: rgb(236, 236, 236);
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-shadow: 0px 0px 4px rgb(255, 179, 179);
+  }
+  .bgrape a button {
+    margin-left: 13px;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: rgb(152, 0, 203);
+    background-color: white;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.4s;
+  }
+  .bgrape a button:hover {
+    padding: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  #about {
+    height: auto;
+    padding: 60px 80px;
+  }
+
+  /* Judul */
+  #about h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+  }
+
+  /* paragraf card */
+  #about p {
+    font-size: 12px;
+    padding: 25px;
+    line-height: 1.7;
+    background: rgba(255, 255, 255, 0.15);
+
+    box-shadow:
+      0 30px 80px rgba(0, 0, 0, 0.6),
+      0 0 25px rgba(255, 0, 255, 0.5);
+  }
+
+  /* jarak antar card */
+  #about .col-lg-6,
+  #about .col-md-6,
+  #about .col-12 {
+    margin-bottom: 5px;
+  }
+
+  /* matikan efek hover 3D di HP (biar tidak berat) */
+
+  /* glow background diperkecil */
+  #about::before,
+  #about::after {
+    width: 300px;
+    height: 300px;
+    filter: blur(80px);
+  }
+  #contact {
+    padding: 70px 55px;
+  }
+
+  /* TITLE */
+  .contact-title {
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+  }
+
+  /* CONTAINER JADI 1 KOLOM */
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* CARD */
+  .contact-info,
+  .contact-form {
+    padding: 55px;
+    border-radius: 26px;
+  }
+
+  /* H2 */
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  /* INFO ITEM */
+  .info-item {
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  .info-item span {
+    font-size: 20px;
+  }
+
+  .info-item p {
+    font-size: 13px;
+  }
+
+  /* FORM INPUT */
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* TEXTAREA */
+  .contact-form textarea {
+    min-height: 100px;
+  }
+
+  /* BUTTON */
+  .contact-form button {
+    padding: 13px;
+    font-size: 14px;
+  }
+}
+
+/* Responsive */
