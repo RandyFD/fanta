@@ -2,10 +2,7 @@
    GLOBAL
 ========================= */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red !important;
 }
 
 html {
@@ -13,6 +10,10 @@ html {
 }
 
 body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   background-repeat: no-repeat;
   font-family: "Segoe UI", sans-serif;
   overflow-x: hidden;
