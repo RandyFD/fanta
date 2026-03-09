@@ -269,11 +269,17 @@ body {
 }
 #strawberry {
   background: linear-gradient(rgb(255, 66, 195), rgb(255, 81, 0));
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
 }
 #lemon {
   background: linear-gradient(rgb(255, 81, 0), rgb(248, 255, 41));
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
 }
 .blemon a button {
   margin-left: 168px;
@@ -356,6 +362,10 @@ body {
 
 #grape {
   background: linear-gradient(rgb(248, 255, 33), rgb(182, 0, 166));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
 }
 .grape-bg1 {
   margin-left: -90px;
@@ -455,7 +465,10 @@ body {
 
 #about {
   background: linear-gradient(rgb(182, 0, 166), black);
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
 }
 
 /* =========================
