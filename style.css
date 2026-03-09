@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid red !important;
 }
 
 html {
@@ -273,6 +274,7 @@ body {
   display: flex;
   align-items: center;
   padding: 50px 0;
+  width: 100%;
 }
 #lemon {
   background: linear-gradient(rgb(255, 81, 0), rgb(248, 255, 41));
@@ -280,6 +282,7 @@ body {
   display: flex;
   align-items: center;
   padding: 50px 0;
+  width: 100%;
 }
 .blemon a button {
   margin-left: 168px;
@@ -366,6 +369,7 @@ body {
   display: flex;
   align-items: center;
   padding: 50px 0;
+  width: 100%;
 }
 .grape-bg1 {
   margin-left: -90px;
@@ -1030,6 +1034,7 @@ body {
   margin-top: -100px;
   filter: drop-shadow(17px 14px 10px rgba(255, 248, 33, 0.745));
 }
+
 .hero-3 {
   width: 600px;
   margin-top: -520px;
