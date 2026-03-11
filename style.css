@@ -2084,7 +2084,7 @@ body {
     font-size: 17px;
   }
 }
-@media (376px <= width <= 413px) {
+@media (370px <= width <= 414px) {
   #herosec {
     overflow-x: hidden;
   }
