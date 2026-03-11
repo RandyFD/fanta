@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Status</title>
+    <style>
+      /* Mengunci ukuran layar agar tidak bisa di-zoom out/distorsi */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #101326; /* Warna dasar gelap yang elegan */
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      /* Efek Gradasi Bergerak di Background */
+      .background-glow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(
+          circle at 50% 50%,
+          #1e293b 0%,
+          #0f172a 100%
+        );
+        z-index: -1;
+      }
+
+      .container {
+        text-align: center;
+        padding: 20px;
+      }
+
+      h1 {
+        color: #f8fafc;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: -1px;
+        margin: 0;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease forwards;
+        filter: drop-shadow(0 0 8px rgba(135, 239, 255, 0.6));
+      }
+
+      .highlight {
+        background: linear-gradient(90deg, #38bdf8, #818cf8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: block;
+        font-size: 0.9rem;
+        margin-top: 10px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        opacity: 0;
+        animation: fadeIn 1.5s ease 0.5s forwards;
+      }
+
+      /* Animasi */
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Responsif untuk Mobile */
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+        }
+        span.highlight {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-glow"></div>
+
+    <div class="container">
+      <h1>
+        Besok lanjutin kalau
+        <span
+          style="
+            font-style: italic;
+            color: #ebfb71;
+            filter: drop-shadow(0 0 2px rgba(40, 255, 40, 0.6));
+          "
+          >mood</span
+        >.
+      </h1>
+      <div class="highlight">
+        BTW Minta
+        <span style="border-bottom: 1px solid #38bdf8; color: white">THR</span>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1106,7 +1106,985 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 376px) {
+@media (575px <= width<=768px) {
+  #herosec {
+    overflow-x: hidden;
+  }
+  #flavour,
+  #strawberry,
+  #lemon,
+  #grape,
+  #about,
+  #contact {
+    position: relative;
+    overflow: hidden;
+  }
+  .container-fluid {
+    width: 100%;
+  }
+  .logo {
+    margin-top: -15px;
+    width: 230px;
+    height: 230px;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: -90px;
+    margin-bottom: 45px;
+    margin-top: 287px;
+  }
+  .navbar-nav a {
+    margin-left: 12px;
+    border-radius: 25px;
+    margin-bottom: 8px;
+    text-align: center;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100px;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 3px 3px grey;
+    border-bottom: 6px solid rgba(255, 231, 144, 0.679);
+    border-top: 6px solid rgba(255, 214, 66, 0.679);
+    transition: all 0.4s ease;
+  }
+  .kiri {
+    margin-top: -40px;
+    padding-left: 0px;
+    margin-left: -10px;
+  }
+  .kiri h1 {
+    color: rgb(250, 255, 95);
+    font-size: 65px;
+    padding-left: 70%;
+    margin-top: -190px;
+  }
+  .kiri p {
+    width: 350px;
+    margin-top: 170px;
+    padding-left: 100px;
+    font-size: 25px;
+  }
+  .hero-1 {
+    width: 230px;
+    margin-left: 90px;
+    margin-top: -1720px;
+  }
+  .hero-2 {
+    width: 399px;
+    margin-left: -70px;
+    margin-top: -45px;
+  }
+  .hero-3 {
+    width: 400px;
+    margin-top: -480px;
+    margin-left: -70px;
+  }
+  .hero-4 {
+    width: 120px;
+    margin-top: -830px;
+    margin-left: 120px;
+  }
+  .hero-6 {
+    width: 190px;
+    margin-top: -250px;
+    margin-left: -240px;
+    filter: drop-shadow(10px 10px 17px rgba(255, 170, 0, 0.536));
+  }
+  .flavour-1 {
+    transform: scaleX(-1);
+    width: 280px;
+    margin-left: -295px;
+  }
+  .flavour-2 {
+    transform: scaleX(1);
+    width: 320px;
+    margin-left: 246px;
+    margin-top: -480px;
+  }
+  .flavour-3 {
+    margin-top: -250px;
+    font-size: 90px;
+    font-weight: 800;
+  }
+  .stramberyh {
+    margin-top: 100px;
+    margin-left: -10px;
+  }
+  .stramberyh img {
+    width: 110px;
+  }
+  .stramberyh img:hover {
+    transform: rotate(0deg);
+    width: 135px;
+  }
+  .stramberyp img {
+    width: 120px;
+    margin-top: -80px;
+    margin-left: 40px;
+  }
+  .lemonh {
+    margin-top: 190px;
+  }
+  .lemonh img {
+    margin-left: -134px;
+    width: 480px;
+  }
+  .lemonh img:hover {
+    width: 510px;
+  }
+  .lemonp {
+    margin-left: 60px;
+    margin-top: -180px;
+  }
+  .lemonp img {
+    width: 190px;
+  }
+  .berrih {
+    margin-top: 72px;
+    margin-left: -50px;
+  }
+  .berrih img {
+    width: 265px;
+  }
+  .berrip img {
+    width: 120px;
+    margin-top: -90px;
+    margin-left: 40px;
+  }
+  .straw-bg1 {
+    margin-top: -90px;
+    margin-left: -50px;
+    width: 280px;
+  }
+  .straw-1p {
+    display: grid;
+    margin-top: 20px;
+    font-size: 55px;
+    letter-spacing: 3px;
+  }
+  @keyframes putarstraw {
+    0% {
+      transform: scale(0.95) rotate(-35deg);
+    }
+    50% {
+      transform: scale(1) rotate(-30deg);
+    }
+    100% {
+      transform: scale(0.95) rotate(-35deg);
+    }
+  }
+  .straw-0 {
+    margin-top: -190px;
+    margin-left: -290px;
+    filter: drop-shadow(8px 10px 4px rgba(65, 63, 63, 0.748));
+    animation: putarstraw 3s ease infinite;
+  }
+  .straw-1 img {
+    width: 150px;
+    margin-top: -510px;
+    margin-left: 80px !important;
+  }
+  .straw-2 {
+    width: 160px;
+    margin-left: 110px;
+    margin-top: -320px;
+    transform: scale(1.3) rotate(-5deg);
+    filter: drop-shadow(7px 7px 10px rgba(59, 59, 59, 0.656));
+    animation: floating 5s ease infinite;
+  }
+  .bulat {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -220px;
+    animation: pulse 3s infinite;
+  }
+  .straw-p {
+    width: 213px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: -290px;
+  }
+  .bstraw a button {
+    margin-left: -3px;
+    padding: 17px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border: 2px solid white;
+    border-radius: 27px;
+    color: rgb(255, 68, 99);
+    background-color: white;
+    font-weight: 700;
+    font-size: 17px;
+    transition: all 0.4s;
+  }
+  .bstraw a button:hover {
+    padding: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .straw-bg2 {
+    transform: rotate(25deg);
+    margin-left: 106px;
+    width: 80px;
+    margin-top: -95px;
+    filter: drop-shadow(4px 4px 2px rgba(255, 255, 255, 0.889));
+  }
+
+  .daunlemon {
+    width: 310px;
+    margin-left: 280px;
+    margin-top: -90px;
+    filter: drop-shadow(10px 15px 6px rgba(73, 55, 31, 0.863));
+    animation: floating 4s infinite;
+  }
+  .lemon-h1 {
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 800;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 15px;
+    text-shadow: 0px 4px 5px rgb(70, 70, 70);
+  }
+  .lemon-p {
+    width: 410px;
+    color: rgb(236, 236, 236);
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -285px;
+    text-shadow: 0px 0px 4px rgb(255, 179, 179);
+    margin-left: -70px;
+  }
+  .blemon a button {
+    margin-left: 97px;
+    padding: 17px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border: 2px solid white;
+    border-radius: 27px;
+    color: rgb(255, 166, 0);
+    background-color: white;
+    font-weight: 700;
+    font-size: 17px;
+    transition: all 0.4s;
+  }
+  .blemon a button:hover {
+    padding: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .daunlemon2 {
+    position: relative;
+    width: 90px;
+    margin-left: 215px;
+    margin-top: -80px;
+    filter: drop-shadow(0px 5px 4px rgba(255, 255, 255, 0.889));
+  }
+  .lemon-2 {
+    margin-top: -340px;
+    width: 410px;
+    margin-left: -70px;
+    filter: drop-shadow(10px 10px 4px rgba(87, 66, 34, 0.71));
+    animation: putarlemon 3s ease infinite;
+  }
+  .lemon-1 img {
+    transform: rotate(-10deg);
+    margin-left: -75px;
+    width: 450px;
+    margin-top: -370px;
+    filter: drop-shadow(10px 15px 6px rgba(83, 55, 29, 0.863));
+  }
+  .lemon-3 {
+    position: relative;
+    width: 230px;
+    margin-top: -210px;
+    margin-left: 65px;
+
+    animation: floating 4.5s infinite;
+  }
+  .grape-bg1 {
+    margin-left: -22px;
+    width: 250px;
+    filter: drop-shadow(10px 10px 3px rgba(60, 62, 60, 0.49));
+    margin-top: -140px;
+  }
+  .grape-3 {
+    width: 160px;
+    margin-top: 30px;
+    margin-left: -190px;
+    filter: drop-shadow(10px 10px 4px rgba(50, 24, 54, 0.386));
+    animation: floating 4.5s infinite;
+  }
+  .grape-5 {
+    width: 270px;
+    margin-left: 325px;
+    margin-top: -320px;
+    transform: scaleX(-1);
+    filter: drop-shadow(-5px 5px 4px rgba(17, 70, 31, 0.71));
+  }
+  .grapep {
+    margin-top: -130px;
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 15px;
+    text-shadow: 0px 4px 5px rgb(70, 70, 70);
+  }
+  .grape-1 img {
+    width: 400px;
+    margin-left: -50px;
+    filter: drop-shadow(10px 10px 4px rgba(87, 34, 75, 0.71));
+    margin-top: -337px;
+    animation: grape1 3s ease infinite;
+  }
+  .grape-4 {
+    width: 266px;
+    margin-top: -450px;
+    margin-left: 30px;
+    filter: drop-shadow(10px 10px 4px rgba(58, 29, 63, 0.555));
+    animation: grape4 3s ease infinite;
+  }
+  .grape-2 {
+    position: relative;
+    width: 130px;
+    margin-top: -140px;
+    margin-left: 140px;
+    filter: drop-shadow(10px 10px 4px rgba(48, 25, 52, 0.555));
+    animation: grape1 4s ease infinite;
+  }
+  .bulatg {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(98, 0, 178);
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: -120px;
+    animation: pulse 3s infinite;
+  }
+  .grapep2 {
+    width: 195px;
+    margin-left: 15px;
+    color: rgb(236, 236, 236);
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: -350px;
+    text-shadow: 0px 0px 4px rgb(255, 179, 179);
+  }
+  .bgrape a button {
+    margin-left: 13px;
+    padding: 17px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border: 2px solid white;
+    border-radius: 27px;
+    color: rgb(152, 0, 203);
+    background-color: white;
+    font-weight: 700;
+    font-size: 17px;
+    transition: all 0.4s;
+  }
+  .bgrape a button:hover {
+    padding: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .grape-bg2 {
+    width: 70px;
+    transform: rotate(19deg);
+    margin-left: 125px;
+    margin-top: -90px;
+    filter: drop-shadow(3px 3px 4px rgba(255, 255, 255, 0.71));
+  }
+  #about {
+    height: auto;
+    padding: 60px 10%;
+  }
+
+  /* Judul */
+  #about h1 {
+    margin-top: 80px;
+    font-size: 70px;
+    letter-spacing: 4px;
+    margin-bottom: 100px;
+  }
+
+  #about p {
+    font-size: 18px;
+    padding: 25px;
+    line-height: 1.7;
+    background: rgba(255, 255, 255, 0.15);
+
+    box-shadow:
+      0 30px 80px rgba(0, 0, 0, 0.6),
+      0 0 25px rgba(255, 0, 255, 0.5);
+  }
+
+  #about .col-lg-6,
+  #about .col-md-6,
+  #about .col-12 {
+    margin-bottom: 15px;
+  }
+
+  #about::before,
+  #about::after {
+    width: 300px;
+    height: 300px;
+    filter: blur(80px);
+  }
+  #contact {
+    padding: 40px 10%;
+  }
+
+  .contact-title {
+    margin-top: 100px;
+    font-size: 55px;
+    letter-spacing: 3px;
+    margin-bottom: 100px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 59px;
+    border-radius: 28px;
+  }
+
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .info-item {
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  .info-item span {
+    font-size: 40px;
+  }
+
+  .info-item p {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 13px;
+    font-size: 18px;
+  }
+
+  .contact-form textarea {
+    min-height: 100px;
+  }
+
+  .contact-form button {
+    padding: 16px;
+    font-size: 20px;
+    border-radius: 25px;
+  }
+}
+@media (414px <= width <= 575px) {
+  #herosec {
+    overflow-x: hidden;
+  }
+  #flavour,
+  #strawberry,
+  #lemon,
+  #grape,
+  #about,
+  #contact {
+    position: relative;
+    overflow: hidden;
+  }
+  .container-fluid {
+    width: 100%;
+  }
+  .logo {
+    margin-top: -15px;
+    width: 150px;
+    height: 150px;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: -70px;
+    margin-bottom: 45px;
+    margin-top: 187px;
+  }
+  .navbar-nav a {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border-radius: 35px;
+    text-align: center;
+    padding: 10px;
+    width: 80px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0px 2px 2px rgb(0, 0, 0);
+    border-bottom: 2px solid rgba(255, 236, 236, 0.679);
+    border-top: 2px solid rgba(255, 239, 179, 0.679);
+    transition: all 0.4s ease;
+  }
+  .kiri {
+    margin-top: -40px;
+    padding-left: 0px;
+    margin-left: -10px;
+  }
+  .kiri h1 {
+    color: rgb(250, 255, 95);
+    font-size: 55px;
+    padding-left: 65%;
+    margin-top: -150px;
+  }
+  .kiri p {
+    width: 100%;
+    margin-top: 130px;
+    padding-left: 60px;
+    font-size: 15px;
+  }
+  .hero-1 {
+    width: 150px;
+    margin-left: 55px;
+    margin-top: -1300px;
+  }
+  .hero-2 {
+    width: 309px;
+    margin-left: -80px;
+    margin-top: -45px;
+  }
+  .hero-3 {
+    width: 300px;
+    margin-top: -480px;
+    margin-left: -80px;
+  }
+  .hero-4 {
+    width: 90px;
+    margin-top: -730px;
+    margin-left: 90px;
+  }
+  .hero-6 {
+    width: 150px;
+    margin-top: -300px;
+    margin-left: -240px;
+    filter: drop-shadow(10px 10px 17px rgba(255, 170, 0, 0.536));
+  }
+  .flavour-1 {
+    transform: scaleX(-1);
+    width: 180px;
+    margin-left: -270px;
+  }
+  .flavour-2 {
+    transform: scaleX(1);
+    width: 250px;
+    margin-left: 176px;
+    margin-top: -280px;
+  }
+  .flavour-3 {
+    margin-top: -150px;
+    font-size: 50px;
+    font-weight: 800;
+  }
+  .stramberyh {
+    margin-top: 10px;
+    margin-left: -40px;
+  }
+  .stramberyh img {
+    width: 80px;
+  }
+  .stramberyh img:hover {
+    transform: rotate(0deg);
+    width: 95px;
+  }
+  .stramberyp img {
+    width: 90px;
+    margin-top: -60px;
+    margin-left: 10px;
+  }
+  .lemonh {
+    margin-top: 60px;
+  }
+  .lemonh img {
+    margin-left: -93px;
+    width: 320px;
+  }
+  .lemonh img:hover {
+    width: 330px;
+  }
+  .lemonp {
+    margin-left: 30px;
+    margin-top: -110px;
+  }
+  .lemonp img {
+    width: 120px;
+  }
+  .berrih {
+    margin-top: 0px;
+    margin-left: -30px;
+  }
+  .berrih img {
+    width: 200px;
+  }
+  .berrip img {
+    width: 70px;
+    margin-top: -90px;
+    margin-left: 20px;
+  }
+  .straw-bg1 {
+    margin-top: 10px;
+    margin-left: -50px;
+    width: 180px;
+  }
+  .straw-1p {
+    display: grid;
+    margin-top: -0px;
+    font-size: 35px;
+    letter-spacing: 3px;
+  }
+  .straw-0 {
+    margin-top: -50px;
+    margin-left: -280px;
+    filter: drop-shadow(8px 10px 4px rgba(65, 63, 63, 0.748));
+    animation: putarstraw 3s ease infinite;
+  }
+  .straw-1 img {
+    width: 100px;
+    margin-top: -410px;
+    margin-left: 40px !important;
+  }
+  .straw-2 {
+    width: 110px;
+    margin-left: 70px;
+    margin-top: -390px;
+    transform: scale(1.3) rotate(-5deg);
+    filter: drop-shadow(7px 7px 10px rgba(59, 59, 59, 0.656));
+    animation: floating 5s ease infinite;
+  }
+  .bulat {
+    position: absolute;
+    margin-left: -40px;
+    margin-top: -260px;
+    animation: pulse 3s infinite;
+  }
+  .straw-p {
+    width: 163px;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: -90px;
+  }
+  .bstraw a button {
+    margin-left: -3px;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: 2px solid white;
+    border-radius: 27px;
+    color: rgb(255, 68, 99);
+    background-color: white;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.4s;
+  }
+  .bstraw a button:hover {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .straw-bg2 {
+    transform: rotate(25deg);
+    margin-left: 82px;
+    width: 60px;
+    margin-top: -75px;
+    filter: drop-shadow(4px 4px 2px rgba(255, 255, 255, 0.889));
+  }
+  @keyframes putarstraw {
+    0% {
+      transform: scale(0.55) rotate(-35deg);
+    }
+    50% {
+      transform: scale(0.6) rotate(-30deg);
+    }
+    100% {
+      transform: scale(0.55) rotate(-35deg);
+    }
+  }
+  .daunlemon {
+    width: 200px;
+    margin-left: 240px;
+    margin-top: 50px;
+    filter: drop-shadow(10px 15px 6px rgba(73, 55, 31, 0.863));
+    animation: floating 4s infinite;
+  }
+  .lemon-h1 {
+    margin-top: 0px;
+    font-size: 40px;
+    font-weight: 800;
+    margin-left: -100px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 15px;
+    text-shadow: 0px 4px 5px rgb(70, 70, 70);
+  }
+  .lemon-p {
+    width: 350px;
+    color: rgb(236, 236, 236);
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: -35px;
+    text-shadow: 0px 0px 4px rgb(255, 179, 179);
+    margin-left: -120px;
+  }
+  .blemon a button {
+    margin-left: 48px;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: rgb(255, 166, 0);
+    background-color: white;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.4s;
+  }
+  .blemon a button:hover {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .daunlemon2 {
+    position: relative;
+    width: 60px;
+    margin-left: 137px;
+    margin-top: -66px;
+    filter: drop-shadow(0px 5px 4px rgba(255, 255, 255, 0.889));
+  }
+  .lemon-2 {
+    margin-top: -120px;
+    width: 280px;
+    margin-left: -70px;
+    filter: drop-shadow(10px 10px 4px rgba(87, 66, 34, 0.71));
+    animation: putarlemon 3s ease infinite;
+  }
+  .lemon-1 img {
+    transform: rotate(-10deg);
+    margin-left: -65px;
+    width: 300px;
+    margin-top: -270px;
+    filter: drop-shadow(10px 15px 6px rgba(83, 55, 29, 0.863));
+  }
+  .lemon-3 {
+    position: relative;
+    width: 130px;
+    margin-top: -140px;
+    margin-left: 35px;
+
+    animation: floating 4.5s infinite;
+  }
+  .grape-bg1 {
+    margin-left: -12px;
+    width: 130px;
+    filter: drop-shadow(10px 10px 3px rgba(60, 62, 60, 0.49));
+    margin-top: -120px;
+  }
+  .grape-3 {
+    width: 160px;
+    margin-top: 30px;
+    margin-left: -190px;
+    filter: drop-shadow(10px 10px 4px rgba(50, 24, 54, 0.386));
+    animation: floating 4.5s infinite;
+  }
+  .grape-5 {
+    width: 200px;
+    margin-left: 230px;
+    margin-top: -270px;
+    transform: scaleX(-1);
+    filter: drop-shadow(-5px 5px 4px rgba(17, 70, 31, 0.71));
+  }
+  .grapep {
+    margin-top: -130px;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 15px;
+    text-shadow: 0px 4px 5px rgb(70, 70, 70);
+  }
+  .grape-1 img {
+    width: 280px;
+    margin-left: -30px;
+    filter: drop-shadow(10px 10px 4px rgba(87, 34, 75, 0.71));
+    margin-top: -237px;
+    animation: grape1 3s ease infinite;
+  }
+  .grape-4 {
+    width: 166px;
+    margin-top: -300px;
+    margin-left: 50px;
+    filter: drop-shadow(10px 10px 4px rgba(58, 29, 63, 0.555));
+    animation: grape4 3s ease infinite;
+  }
+  .grape-2 {
+    position: relative;
+    width: 90px;
+    margin-top: -140px;
+    margin-left: 110px;
+    filter: drop-shadow(10px 10px 4px rgba(48, 25, 52, 0.555));
+    animation: grape1 4s ease infinite;
+  }
+  .bulatg {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(98, 0, 178);
+    border-radius: 50%;
+    margin-left: -50px;
+    margin-top: -120px;
+    animation: pulse 3s infinite;
+  }
+  .grapep2 {
+    width: 155px;
+    margin-left: 15px;
+    color: rgb(236, 236, 236);
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: -150px;
+    text-shadow: 0px 0px 4px rgb(255, 179, 179);
+  }
+  .bgrape a button {
+    width: 100px;
+    margin-left: 13px;
+    padding: 7px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: rgb(152, 0, 203);
+    background-color: white;
+    font-weight: 700;
+    font-size: 12px;
+    transition: all 0.4s;
+  }
+  .bgrape a button:hover {
+    width: 102px;
+
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .grape-bg2 {
+    width: 40px;
+    transform: rotate(19deg);
+    margin-left: 95px;
+    margin-top: -60px;
+    filter: drop-shadow(3px 3px 4px rgba(255, 255, 255, 0.71));
+  }
+  #about {
+    height: auto;
+    padding: 60px 10%;
+  }
+
+  /* Judul */
+  #about h1 {
+    margin-top: -20px;
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+  }
+
+  #about p {
+    font-size: 13px;
+    padding: 25px;
+    line-height: 1.7;
+    background: rgba(255, 255, 255, 0.15);
+
+    box-shadow:
+      0 30px 80px rgba(0, 0, 0, 0.6),
+      0 0 25px rgba(255, 0, 255, 0.5);
+  }
+
+  #about .col-lg-6,
+  #about .col-md-6,
+  #about .col-12 {
+    margin-bottom: 5px;
+  }
+
+  #about::before,
+  #about::after {
+    width: 300px;
+    height: 300px;
+    filter: blur(80px);
+  }
+  #contact {
+    padding: 40px 10%;
+  }
+
+  .contact-title {
+    margin-top: 20px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 90px;
+  }
+
+  .contact-container {
+    margin-top: -30px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 39px;
+    border-radius: 26px;
+  }
+
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .info-item {
+    gap: 12px;
+    margin-bottom: 2px;
+  }
+
+  .info-item span {
+    font-size: 25px;
+  }
+
+  .info-item p {
+    font-size: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .contact-form textarea {
+    min-height: 100px;
+  }
+
+  .contact-form button {
+    padding: 13px;
+    font-size: 17px;
+  }
+}
+@media (376px <= width <= 413px) {
   #herosec {
     overflow-x: hidden;
   }
@@ -1139,14 +2117,14 @@ body {
     margin-bottom: 8px;
     border-radius: 35px;
     text-align: center;
-    padding: 5px;
+    padding: 7px;
     width: 65px;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 700;
     color: white;
-    text-shadow: 0px 0px 2px grey;
-    border-bottom: 3px solid rgba(255, 231, 144, 0.679);
-    border-top: 2px solid rgba(255, 214, 66, 0.679);
+    text-shadow: 0px 2px 2px rgb(0, 0, 0);
+    border-bottom: 2px solid rgba(255, 236, 236, 0.679);
+    border-top: 2px solid rgba(255, 239, 179, 0.679);
     transition: all 0.4s ease;
   }
   .kiri {
@@ -1168,7 +2146,7 @@ body {
   }
   .hero-1 {
     width: 130px;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-top: -1260px;
   }
   .hero-2 {
@@ -1200,7 +2178,7 @@ body {
   .flavour-2 {
     transform: scaleX(1);
     width: 250px;
-    margin-left: 116px;
+    margin-left: 126px;
     margin-top: -280px;
   }
   .flavour-3 {
@@ -1265,13 +2243,14 @@ body {
     letter-spacing: 3px;
   }
   .straw-0 {
+    margin-top: -50px;
     margin-left: -280px;
     filter: drop-shadow(8px 10px 4px rgba(65, 63, 63, 0.748));
     animation: putarstraw 3s ease infinite;
   }
   .straw-1 img {
     width: 100px;
-    margin-top: -510px;
+    margin-top: -410px;
     margin-left: 40px !important;
   }
   .straw-2 {
@@ -1537,6 +2516,7 @@ body {
     filter: blur(80px);
   }
   #contact {
+    margin-top: -1px;
     padding: 40px 8%;
   }
 
